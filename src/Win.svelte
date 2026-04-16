@@ -14,7 +14,7 @@
     <div id="diploma">
         <div id="header">
             <h1>{$t`Git Diploma`}</h1>
-            <h2>{$t`On completing Oh My Git 2.0!`}</h2>
+            <h2>{$t`On completing OMG Sigma Pathway!`}</h2>
         </div>
         <div id="body">
             <p>
@@ -33,7 +33,7 @@
         </div>
         <div id="footer">
             <p>
-                {@html $t`Signed: ${"<i>" + $t`bleeptrack & blinry` + "</i>"}`} –
+                {@html $t`Signed: ${"<i>" + $t`Big Sig & Lil Siggy` + "</i>"}`} –
                 {$t`Date: ${date}`}
             </p>
         </div>

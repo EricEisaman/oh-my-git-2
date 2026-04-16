@@ -66,8 +66,8 @@ msgid "Bandaid"
 msgstr "Bandaid"
 
 #: src/Win.svelte:42
-msgid "bleeptrack & blinry"
-msgstr "bleeptrack & blinry"
+msgid "Big Sig & Lil Siggy"
+msgstr "Big Sig & Lil Siggy"
 
 #: src/cards.ts:524
 msgid "Blob Eater"
@@ -358,8 +358,8 @@ msgid "Not enough energy to play {0}."
 msgstr "Not enough energy to play {0}."
 
 #: src/Win.svelte:15
-msgid "On completing Oh My Git 2.0!"
-msgstr "On completing Oh My Git 2.0!"
+msgid "On completing OMG Sigma Pathway!"
+msgstr "On completing OMG Sigma Pathway!"
 
 #: src/Decision.svelte:11
 #~ msgid "Pick a card!"

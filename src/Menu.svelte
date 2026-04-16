@@ -3,11 +3,8 @@
 </script>
 
 <div id="menu">
-    <h1>Oh My Git 2.0</h1>
-    <h2>
-        by <a href="https://bleeptrack.de" _target="blank">bleeptrack</a> &
-        <a href="https://blinry.org" _target="blank">blinry</a>
-    </h2>
+    <h1>OMG Sigma Pathway</h1>
+    <h2>by Big Sig and Lil Siggy</h2>
     <span class="filler"></span>
     <a href="https://github.com/git-learning-game/oh-my-git-2" _target="blank"
         >GitHub</a

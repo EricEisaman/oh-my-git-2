@@ -1,4 +1,4 @@
-# Oh My Git 2.0 - in your browser!
+# OMG Sigma Pathway
 
 A prototype for an interactive Git learning game, using a tiny Linux VM in your browser!
 

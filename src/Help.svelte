@@ -3,14 +3,10 @@
 </script>
 
 <div id="container">
-    <h1>Oh My Git (in your browser!)</h1>
+    <h1>OMG Sigma Pathway (in your browser!)</h1>
 
     <p>
-        This is a early technical preview by <a
-            target="_blank"
-            href="https://bleeptrack.de">bleeptrack</a
-        >
-        and <a target="_blank" href="https://blinry.org">blinry</a>. We boot a
+        This is a early technical preview by Big Sig and Lil Siggy. We boot a
         Linux VM in your browser, where you can use a <b>real Git!</b> We invite
         you to try these low-level operations, and check out how the graph
         changes in response! You can learn more in the
