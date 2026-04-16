@@ -3,8 +3,11 @@
 </script>
 
 <div id="menu">
-    <h1>OMG Sigma Pathway</h1>
-    <h2>by Big Sig and Lil Siggy</h2>
+    <img src="/images/logo.png" alt="OMG Sigma Pathway logo" width="64" height="64" class="logo" />
+    <div>
+        <h1>OMG Sigma Pathway</h1>
+        <h2>by Big Sig and Lil Siggy</h2>
+    </div>
     <span class="filler"></span>
     <a href="https://github.com/git-learning-game/oh-my-git-2" _target="blank"
         >GitHub</a
@@ -35,5 +38,12 @@
     }
     a:hover {
         text-decoration: underline;
+    }
+
+    .logo {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+        margin-left: 0.5em;
     }
 </style>
