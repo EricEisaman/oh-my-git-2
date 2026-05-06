@@ -41,6 +41,7 @@
 </script>
 
 <div id="wrapper" on:mouseenter={enable} on:mouseleave={disable} role="none">
+    <div id="header">Terminal</div>
     <div id="terminal" bind:this={terminalDiv} />
 </div>
 
@@ -48,11 +49,24 @@
     #wrapper {
         width: 100%;
         height: 100%;
-        background: black;
-        overflow: hidden;
+        background: rgba(9, 15, 26, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1.35rem;
         display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 24px 55px rgba(0, 0, 0, 0.28);
+    }
+    #header {
+        padding: 0.95rem 1rem;
+        font-weight: 700;
+        color: #e7f0ff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+        letter-spacing: 0.04em;
     }
     #terminal {
         flex: 1;
+        min-height: 0;
     }
 </style>

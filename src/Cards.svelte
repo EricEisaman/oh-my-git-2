@@ -5,17 +5,11 @@
     import FileSvelte from "./File.svelte"
     const dispatch = createEventDispatcher()
 
-    import {Battle, Card} from "./cards.ts"
-
     export let index: TextFile[] = []
     export let workingDirectory: TextFile[] = []
 
     function drop(e: DragEvent, slotIndex: number) {
-        /*e.preventDefault()
-        const cardIndex = parseInt(e.dataTransfer?.getData("text/plain") ?? "")
-        if (cardIndex >= 0 && cardIndex < battle.hand.length) {
-            dispatch("drag", {cardIndex, slotIndex})
-        }*/
+        e.preventDefault()
     }
 
     function clickFile(_: MouseEvent, file: TextFile) {
@@ -23,7 +17,7 @@
     }
 </script>
 
-<div id="wrapper">
+<div id="wrapper" class="panel panel-surface">
     {#if workingDirectory.length > 0}
         <div class="group">
             <div class="column-title">{$t`Working directory`}</div>
@@ -63,36 +57,46 @@
 
 <style>
     #wrapper {
-        padding: 1em;
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 1em;
-        overflow: scroll;
-        flex: 1;
-    }
-    .group {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1.2fr 0.9fr;
+        gap: 1rem;
         overflow: hidden;
+        min-height: 100%;
+        align-items: stretch;
+    }
+
+    .group {
+        min-width: 0;
         display: flex;
         flex-direction: column;
-    }
-    .cards {
+        gap: 1rem;
         flex: 1;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1.25rem;
+        padding: 1.1rem;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+    }
+
+    .cards {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 1rem;
         overflow-y: auto;
+        min-height: 0;
     }
+
     .column-title {
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 0.5em;
-        height: 1.5em;
-        font-size: 120%;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.92rem;
+        color: #d8e5ff;
     }
+
     .index {
-        background: blue;
-        padding: 1em;
-        border-radius: 1em;
-        color: white;
+        background: rgba(27, 38, 57, 0.95);
+        color: #eaf0ff;
     }
 </style>

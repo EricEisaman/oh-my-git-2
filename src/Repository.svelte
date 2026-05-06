@@ -65,14 +65,19 @@
 </script>
 
 <div id="wrapper">
-    <div
-        id="name"
-        on:click={() => {
-            dispatch("swapDir", repo.path)
-        }}
-    >
-        {repo.path}
-        {#if repo.bare}(bare){/if}
+    <div id="header">
+        <div
+            id="name"
+            on:click={() => {
+                dispatch("swapDir", repo.path)
+            }}
+        >
+            {repo.path}
+            {#if repo.bare}(bare){/if}
+        </div>
+        <div id="delete">
+            <button on:click={() => dispatch("deleteRepo", repo)}>❌</button>
+        </div>
     </div>
     {#if repo.empty}
         <div id="message">(not initialized)</div>
@@ -84,24 +89,41 @@
     <div id="cards">
         <Cards {index} {workingDirectory} on:edited />
     </div>
-    <div id="delete">
-        <button on:click={() => dispatch("deleteRepo", repo)}>❌</button>
-    </div>
 </div>
 
 <style>
     #wrapper {
         flex: 1;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "header header"
+            "graph cards";
         position: relative;
         min-width: 0;
         overflow: hidden;
-        background: #ffe6c4;
+        background: linear-gradient(180deg, rgba(10, 18, 33, 0.96), rgba(8, 14, 26, 0.9));
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1.5rem;
+        box-shadow: 0 24px 55px rgba(0, 0, 0, 0.24);
+    }
+
+    #header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        background: rgba(255, 255, 255, 0.04);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     }
     #graph {
         flex: 1;
         overflow: hidden;
         display: flex;
+        grid-area: graph;
     }
     :global(#graph svg) {
         height: 100%;
@@ -113,20 +135,42 @@
         align-self: center;
         text-align: center;
         font-style: italic;
+        color: #c4d1e2;
+        padding: 1.5rem;
     }
     #cards {
         display: flex;
+        width: 100%;
+        grid-area: cards;
     }
     #name {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        z-index: 10;
+        grid-area: name;
+        padding: 1rem;
         cursor: pointer;
+        font-weight: 700;
+        color: #e7f1ff;
+        background: rgba(255, 255, 255, 0.04);
+        transition: transform 0.15s ease;
+        z-index: 10;
+    }
+    #name:hover {
+        transform: translateY(-1px);
     }
     #delete {
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 1rem;
+        right: 1rem;
+    }
+    #delete button {
+        padding: 0.55rem 0.85rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.06);
+        color: #f0f7ff;
+        transition: background 0.15s ease, transform 0.15s ease;
+    }
+    #delete button:hover {
+        background: rgba(255, 255, 255, 0.14);
+        transform: translateY(-1px);
     }
 </style>
