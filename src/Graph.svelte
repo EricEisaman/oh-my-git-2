@@ -89,12 +89,12 @@
         <div class="option-group">
             <label>
                 <input type="checkbox" bind:checked={showTreesAndBlobs} />
-                Trees & blobs
+                {$t`Trees & blobs`}
             </label>
             {#if !repo.bare}
                 <label>
                     <input type="checkbox" bind:checked={showIndexAndWD} />
-                    Index & working directory
+                    {$t`Index & working directory`}
                 </label>
             {/if}
         </div>

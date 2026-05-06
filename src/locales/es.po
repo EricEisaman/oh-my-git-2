@@ -1,0 +1,382 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-06 19:29-0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/Achievements.svelte:13
+msgid "Achievements"
+msgstr ""
+
+#: src/RepoAdder.svelte:44
+msgid "Add"
+msgstr ""
+
+#: src/cards.ts:278
+msgid "Add changed files to the index and commit."
+msgstr ""
+
+#: src/Win.svelte:31
+msgid "Advanced git workflow skills"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:205
+msgid "tuB+Kl"
+msgstr ""
+
+#: src/cards.ts:699
+msgid "Automatically creating a commit."
+msgstr ""
+
+#: src/Win.svelte:17
+msgid "Awarded for completing OMG Sigma Pathway"
+msgstr ""
+
+#: src/RepoAdder.svelte:38
+msgid "bare"
+msgstr ""
+
+#: src/Win.svelte:36
+msgid "Big Sig & Lil Siggy"
+msgstr ""
+
+#: src/Decision.svelte:44
+msgid "Bundle"
+msgstr ""
+
+#: src/Decision.svelte:56
+#: src/Path.svelte:81
+msgid "cards"
+msgstr ""
+
+#: src/Decision.svelte:18
+msgid "Choose how you want to shape your next git encounter."
+msgstr ""
+
+#: src/Win.svelte:41
+msgid "Close"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:681
+msgid "dI6Uf/"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:272
+msgid "rl/8FN"
+msgstr ""
+
+#: src/Achievements.svelte:37
+msgid "Complete all achievements to earn your Git diploma."
+msgstr ""
+
+#: src/cards.ts:302
+msgid "Convert working directory and index into stash commits. Then, reset them to the HEAD commit."
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:260
+msgid "wvDQZ+"
+msgstr ""
+
+#: src/cards.ts:242
+msgid "Copy a file from the index to the working directory."
+msgstr ""
+
+#: src/cards.ts:266
+msgid "Copy a file from the specified commit to the index."
+msgstr ""
+
+#: src/cards.ts:254
+msgid "Copy a file from the specified commit to the working directory."
+msgstr ""
+
+#: src/cards.ts:218
+msgid "Copy a file from the working directory to the index."
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:248
+msgid "DhnZt+"
+msgstr ""
+
+#: src/cards.ts:224
+msgid "Copy all files from the working directory to the index."
+msgstr ""
+
+#: src/cards.ts:314
+msgid "Create a new branch at the HEAD commit."
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:199
+msgid "+7hBFY"
+msgstr ""
+
+#: src/cards.ts:320
+msgid "Create a new tag at the HEAD commit."
+msgstr ""
+
+#: src/cards.ts:193
+msgid "Create an empty file in the working directory."
+msgstr ""
+
+#: src/achievements.ts:21
+msgid "Create files (with different content)"
+msgstr ""
+
+#: src/Decision.svelte:53
+msgid "Current deck"
+msgstr ""
+
+#: src/Win.svelte:36
+msgid "Date:"
+msgstr ""
+
+#: src/cards.ts:326
+msgid "Delete a tag."
+msgstr ""
+
+#: src/achievements.ts:34
+msgid "Delete files (with different content)"
+msgstr ""
+
+#: src/Win.svelte:13
+msgid "Diploma awarded"
+msgstr ""
+
+#: src/Achievements.svelte:27
+msgid "Done"
+msgstr ""
+
+#: src/Graph.svelte:89
+msgid "Enter fullscreen"
+msgstr ""
+
+#: src/StateIndicator.svelte:27
+msgid "Enter text: "
+msgstr ""
+
+#: src/Graph.svelte:89
+msgid "Exit fullscreen"
+msgstr ""
+
+#: src/RepoAdder.svelte:31
+msgid "folder name"
+msgstr ""
+
+#: src/Win.svelte:25
+msgid "For demonstrating proficiency in these Git skills:"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/Win.svelte:16
+msgid "GEZ/7l"
+msgstr ""
+
+#: src/Win.svelte:28
+msgid "HEAD manipulation"
+msgstr ""
+
+#: src/Cards.svelte:38
+msgid "Index"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/Graph.svelte:85
+msgid "D22+/M"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/Win.svelte:30
+msgid "NJQ//A"
+msgstr ""
+
+#: src/RepoAdder.svelte:42
+msgid "initialize"
+msgstr ""
+
+#: src/cards.ts:211
+msgid "Joker! Run an arbitrary command."
+msgstr ""
+
+#: src/Path.svelte:31
+msgid "Journey to your Git diploma"
+msgstr ""
+
+#: src/cards.ts:284
+msgid "Make a copy a file."
+msgstr ""
+
+#: src/Menu.svelte:10
+msgid "Master Git through gameplay with a clean, visual experience."
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:308
+msgid "jb/LQX"
+msgstr ""
+
+#: src/cards.ts:350
+msgid "Merge the specified commit into the current HEAD commit, and set index and working directory to the result. Does nothing if the specified commit is already an ancestor of HEAD."
+msgstr ""
+
+#: src/Win.svelte:29
+msgid "Merging, rebasing, and cherry-picking"
+msgstr ""
+
+#: src/cards.ts:296
+msgid "Move a file from one file to another in both the working directory and index."
+msgstr ""
+
+#: src/RepoAdder.svelte:25
+msgid "Path"
+msgstr ""
+
+#: src/cards.ts:664
+msgid "Played {0}."
+msgstr ""
+
+#: src/Achievements.svelte:16
+msgid "Points"
+msgstr ""
+
+#: src/Win.svelte:22
+msgid "Presented to"
+msgstr ""
+
+#: src/Win.svelte:40
+msgid "Print"
+msgstr ""
+
+#: src/Battle.svelte:297
+msgid "Refreshing..."
+msgstr ""
+
+#: src/cards.ts:236
+msgid "Remove a file from the index."
+msgstr ""
+
+#: src/cards.ts:230
+msgid "Remove a file in the working directory."
+msgstr ""
+
+#: src/cards.ts:290
+msgid "Rename a file."
+msgstr ""
+
+#: src/Win.svelte:27
+msgid "Repository creation & branching"
+msgstr ""
+
+#: src/cards.ts:649
+#: src/cards.ts:675
+msgid "Running \"{0}\""
+msgstr ""
+
+#: src/StateIndicator.svelte:24
+msgid "Select commit/branch/tag"
+msgstr ""
+
+#: src/StateIndicator.svelte:21
+msgid "Select file"
+msgstr ""
+
+#: src/Path.svelte:32
+msgid "Select the next stop to continue your adventure through git concepts and challenges."
+msgstr ""
+
+#: src/cards.ts:332
+msgid "Set HEAD to a branch, and reset the working directory and index to that commit."
+msgstr ""
+
+#: src/cards.ts:338
+msgid "Set HEAD to a commit, and reset the working directory and index to that commit."
+msgstr ""
+
+#: src/Achievements.svelte:35
+msgid "Show Diploma"
+msgstr ""
+
+#: src/cards.ts:356
+msgid "Show the commit history starting at HEAD."
+msgstr ""
+
+#: src/cards.ts:374
+msgid "Show the difference between the index and the HEAD commit."
+msgstr ""
+
+#: src/cards.ts:368
+msgid "Show the difference between the working directory and index."
+msgstr ""
+
+#: src/cards.ts:362
+msgid "Show the status of the working directory and index."
+msgstr ""
+
+#: src/Win.svelte:36
+msgid "Signed: {0}"
+msgstr ""
+
+#: src/Decision.svelte:20
+msgid "Skip"
+msgstr ""
+
+#: src/App.svelte:118
+msgid "Starting game..."
+msgstr ""
+
+#: src/Path.svelte:34
+msgid "stops"
+msgstr ""
+
+#: src/Decision.svelte:54
+msgid "These cards are currently available in your queue."
+msgstr ""
+
+#: src/Path.svelte:79
+msgid "These cards shape the git actions available in your next battles."
+msgstr ""
+
+#: src/Achievements.svelte:14
+msgid "Track progress on git milestones and unlock the diploma."
+msgstr ""
+
+#: src/Graph.svelte:80
+msgid "Trees & blobs"
+msgstr ""
+
+#: src/StateIndicator.svelte:34
+msgid "Unknown placeholder"
+msgstr ""
+
+#: src/StateIndicator.svelte:38
+msgid "Unknown state :("
+msgstr ""
+
+#: src/StateIndicator.svelte:16
+msgid "Waiting..."
+msgstr ""
+
+#: src/Cards.svelte:19
+msgid "Working directory"
+msgstr ""
+
+#: src/cards.ts:495
+msgid "You may remove a card from your deck!"
+msgstr ""
+
+#: src/Path.svelte:78
+msgid "Your current deck"
+msgstr ""

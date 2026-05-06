@@ -2,6 +2,7 @@ import {Repository, GitCommit, GitBlob} from "./repository"
 import type {ObjectID} from "./repository"
 import {CardID} from "./cards"
 import {uniq} from "lodash"
+import {msg} from "svelte-i18n-lingui"
 
 export class Achievement {
     constructor(
@@ -17,7 +18,7 @@ export class Achievement {
 export function getAchievements() {
     return {
         CREATE_FILE: new Achievement(
-            "Create files (with different content)",
+            msg`Create files (with different content)`,
             (b: Repository, a: Repository) => {
                 let bContentCounts = getContentCount(b)
                 let aContentCounts = getContentCount(a)
@@ -30,7 +31,7 @@ export function getAchievements() {
             [CardID.Create, CardID.Append],
         ),
         DELETE_FILE: new Achievement(
-            "Delete files (with different content)",
+            msg`Delete files (with different content)`,
             (b: Repository, a: Repository) => {
                 let bContentCounts = getContentCount(b)
                 let aContentCounts = getContentCount(a)
@@ -43,7 +44,7 @@ export function getAchievements() {
             [CardID.Remove],
         ),
         COPY_FILE: new Achievement(
-            "Make copies of files",
+            msg`Make copies of files`,
             (b: Repository, a: Repository) => {
                 // Strategy: count how many files have identical copies in the working directory. In the after state, there must be more copies of identical content than before.
                 let contentCountBefore = getContentCount(b)
@@ -60,7 +61,7 @@ export function getAchievements() {
             [CardID.Copy],
         ),
         MOVE_FILE: new Achievement(
-            "Move files",
+            msg`Move files`,
             (b: Repository, a: Repository) => {
                 // Strategy: In the after state, there must be a file with the same content as before, but a different name.
 
@@ -83,7 +84,7 @@ export function getAchievements() {
         ),
         // MODIFY_FILE
         ADD_TO_INDEX: new Achievement(
-            "Add files to the index",
+            msg`Add files to the index`,
             (b: Repository, a: Repository) => {
                 let bEntryNames = b.index.entries.map((e) => e.name)
                 let aEntryNames = a.index.entries.map((e) => e.name)
@@ -97,7 +98,7 @@ export function getAchievements() {
             [CardID.Add, CardID.Create],
         ),
         DELETE_FROM_INDEX: new Achievement(
-            "Delete entries from the index",
+            msg`Delete entries from the index`,
             (b: Repository, a: Repository) => {
                 let bEntryNames = b.index.entries.map((e) => e.name)
                 let aEntryNames = a.index.entries.map((e) => e.name)
@@ -111,7 +112,7 @@ export function getAchievements() {
             [CardID.RmCached],
         ),
         RESTORE_FROM_INDEX: new Achievement(
-            "Restore files from the index",
+            msg`Restore files from the index`,
             (b: Repository, a: Repository) => {
                 // Loop through index, and count how many files have identical copies in the working directory.
                 let identicalOIDs: ObjectID[] = []
@@ -158,7 +159,7 @@ export function getAchievements() {
         ),
         // EMPTY_INDEX
         CREATE_COMMIT: new Achievement(
-            "Create commits",
+            msg`Create commits`,
             (b: Repository, a: Repository) => {
                 let bCommitIDs = Object.values(b.objects)
                     .filter((o) => o instanceof GitCommit)
@@ -175,7 +176,7 @@ export function getAchievements() {
             [CardID.Commit, CardID.Create, CardID.Add],
         ),
         DETACH_HEAD: new Achievement(
-            "Detach your HEAD (from a non-detached state)",
+            msg`Detach your HEAD (from a non-detached state)`,
             (b: Repository, a: Repository) => {
                 if (
                     Object.keys(b.refs).includes("HEAD") &&
@@ -194,7 +195,7 @@ export function getAchievements() {
         ),
         // CREATE_BRANCH
         CREATE_TAGS: new Achievement(
-            "Create tags",
+            msg`Create tags`,
             (b: Repository, a: Repository) => {
                 let bTags = Object.keys(b.refs).filter((r) =>
                     r.startsWith("refs/tags/"),
@@ -211,7 +212,7 @@ export function getAchievements() {
         ),
         // DELETE_TAGS
         CREATE_TAGS_DIFFERENT_COMMITS: new Achievement(
-            "Create tags on different commits",
+            msg`Create tags on different commits`,
             (b: Repository, a: Repository) => {
                 let bTags = uniq(
                     Object.values(b.refs)
@@ -232,7 +233,7 @@ export function getAchievements() {
             [CardID.Tag, CardID.Commit, CardID.Create, CardID.Add],
         ),
         MERGE_CONFLILCT: new Achievement(
-            "Create a merge conflict",
+            msg`Create a merge conflict`,
             (b: Repository, a: Repository) => {
                 // Count index entries with stage number != 0
                 let beforeIndexEntriesOfStageUnequal0 = b.index.entries.filter(
@@ -256,7 +257,7 @@ export function getAchievements() {
             [CardID.Commit, CardID.Merge],
         ),
         OCTOPUS_MERGE: new Achievement(
-            "Create an octopus merge commit with three or more parents",
+            msg`Create an octopus merge commit with three or more parents`,
             (b: Repository, a: Repository) => {
                 let tripleMergeBefore: ObjectID[] = []
                 for (let object of Object.values(b.objects)) {
@@ -412,6 +413,14 @@ export class AchievementTracker {
             points += progress.progress
         }
         return points
+    }
+
+    getTotalPoints(): number {
+        let total = 0
+        for (let progress of this.achievementProgresses) {
+            total += progress.target
+        }
+        return total
     }
 }
 

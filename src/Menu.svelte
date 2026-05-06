@@ -1,5 +1,6 @@
 <script lang="ts">
     import LanguageSwitcher from "./LanguageSwitcher.svelte"
+    import {t} from "svelte-i18n-lingui"
 </script>
 
 <div id="menu" class="panel">
@@ -7,12 +8,12 @@
         <img src="/images/logo.png" alt="OMG Sigma Pathway logo" width="64" height="64" class="logo" />
         <div class="title-group">
             <h1>OMG Sigma Pathway</h1>
-            <p>Master Git through gameplay with a clean, visual experience.</p>
+            <p>{$t`Master Git through gameplay with a clean, visual experience.`}</p>
         </div>
     </div>
 
     <div class="actions">
-        <a class="button secondary" href="https://github.com/git-learning-game/oh-my-git-2" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="button secondary" href="https://github.com/EricEisaman/oh-my-git-2" target="_blank" rel="noopener noreferrer">GitHub</a>
         <LanguageSwitcher />
     </div>
 </div>

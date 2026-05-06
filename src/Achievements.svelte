@@ -7,15 +7,16 @@
     export let tracker: AchievementTracker
 
     $: points = tracker.getPoints()
+    $: totalPoints = tracker.getTotalPoints()
 </script>
 
 <div id="wrapper" class="panel">
     <div class="heading">
         <div>
-            <h2>Achievements</h2>
-            <p class="small-text">Track progress on git milestones and unlock the diploma.</p>
+            <h2>{$t`Achievements`}</h2>
+            <p class="small-text">{$t`Track progress on git milestones and unlock the diploma.`} 🎓</p>
         </div>
-        <div class="score label-pill">Points: {points}</div>
+        <div class="score label-pill">{$t`Points`}: {points}/{totalPoints}</div>
     </div>
 
     <ul>
@@ -24,9 +25,9 @@
                 class:fullfilled={progress.progress >= progress.target}
                 class:hidden={!progress.visible}
             >
-                <span>{progress.achievement.description}</span>
+                <span>{$t(progress.achievement.description)}</span>
                 {#if progress.progress >= progress.target}
-                    <span class="label-pill">Done</span>
+                    <span class="label-pill">{$t`Done`}</span>
                 {/if}
             </li>
         {/each}
@@ -34,16 +35,16 @@
 
     <div class="actions">
         {#if tracker.isComplete()}
-            <button on:click={() => dispatch("showDiploma")}>Show Diploma</button>
+            <button on:click={() => dispatch("showDiploma")}>{$t`Show Diploma`}</button>
         {:else}
-            <p class="small-text">Complete all achievements to earn your Git diploma.</p>
+            <p class="small-text">{$t`Complete all achievements to earn your Git diploma.`} 🎓</p>
         {/if}
     </div>
 </div>
 
 <style>
     #wrapper {
-        min-height: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -51,6 +52,7 @@
         background: rgba(12, 21, 36, 0.9);
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 1.5rem;
+        overflow: hidden;
     }
 
     .heading {
@@ -71,6 +73,10 @@
         margin: 0;
         display: grid;
         gap: 0.75rem;
+        flex: 1 1 0;
+        min-height: 0;
+        overflow-y: auto;
+        align-content: start;
     }
 
     li {

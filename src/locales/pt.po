@@ -1,0 +1,426 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-06 19:29-0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: pt\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Achievements.svelte:13
+msgid "Achievements"
+msgstr "Conquistas"
+
+#: src/RepoAdder.svelte:44
+msgid "Add"
+msgstr "Adicionar"
+
+#: src/cards.ts:278
+msgid "Add changed files to the index and commit."
+msgstr "Adiciona os ficheiros alterados ao índice e faz um commit."
+
+#: src/achievements.ts:87
+msgid "Add files to the index"
+msgstr "Adicionar ficheiros ao índice"
+
+#: src/Win.svelte:31
+msgid "Advanced git workflow skills"
+msgstr "Competências avançadas de fluxo de trabalho no Git"
+
+#. js-lingui-explicit-id
+#: src/cards.ts:205
+msgid "tuB+Kl"
+msgstr "Adiciona uma string aleatória a um ficheiro no diretório de trabalho."
+
+#: src/cards.ts:699
+msgid "Automatically creating a commit."
+msgstr "Cria um commit automaticamente."
+
+#: src/Win.svelte:17
+msgid "Awarded for completing OMG Sigma Pathway"
+msgstr "Atribuído por completar o OMG Sigma Pathway"
+
+#: src/RepoAdder.svelte:38
+msgid "bare"
+msgstr "bare"
+
+#: src/Win.svelte:36
+msgid "Big Sig & Lil Siggy"
+msgstr "Big Sig & Lil Siggy"
+
+#: src/Decision.svelte:44
+msgid "Bundle"
+msgstr "Pacote"
+
+#: src/Decision.svelte:56
+#: src/Path.svelte:81
+msgid "cards"
+msgstr "cartas"
+
+#: src/Decision.svelte:18
+msgid "Choose how you want to shape your next git encounter."
+msgstr "Escolhe como queres moldar o teu próximo encontro com o Git."
+
+#: src/Win.svelte:41
+msgid "Close"
+msgstr "Fechar"
+
+#: src/Achievements.svelte:37
+msgid "Complete all achievements to earn your Git diploma."
+msgstr "Completa todas as conquistas para ganhar o teu diploma Git."
+
+#: src/cards.ts:302
+msgid "Convert working directory and index into stash commits. Then, reset them to the HEAD commit."
+msgstr "Converte o diretório de trabalho e o índice em commits de stash. Depois, repõe-os no commit HEAD."
+
+#. js-lingui-explicit-id
+#: src/cards.ts:260
+msgid "wvDQZ+"
+msgstr "Copia um ficheiro do commit HEAD para o índice."
+
+#: src/cards.ts:242
+msgid "Copy a file from the index to the working directory."
+msgstr "Copia um ficheiro do índice para o diretório de trabalho."
+
+#: src/cards.ts:266
+msgid "Copy a file from the specified commit to the index."
+msgstr "Copia um ficheiro do commit especificado para o índice."
+
+#: src/cards.ts:254
+msgid "Copy a file from the specified commit to the working directory."
+msgstr "Copia um ficheiro do commit especificado para o diretório de trabalho."
+
+#: src/cards.ts:218
+msgid "Copy a file from the working directory to the index."
+msgstr "Copia um ficheiro do diretório de trabalho para o índice."
+
+#. js-lingui-explicit-id
+#: src/cards.ts:248
+msgid "DhnZt+"
+msgstr "Copia todos os ficheiros do índice para o diretório de trabalho."
+
+#: src/cards.ts:224
+msgid "Copy all files from the working directory to the index."
+msgstr "Copia todos os ficheiros do diretório de trabalho para o índice."
+
+#: src/achievements.ts:236
+msgid "Create a merge conflict"
+msgstr "Criar um conflito de merge"
+
+#: src/cards.ts:314
+msgid "Create a new branch at the HEAD commit."
+msgstr "Cria um novo ramo no commit HEAD."
+
+#. js-lingui-explicit-id
+#: src/cards.ts:199
+msgid "+7hBFY"
+msgstr "Cria um novo ficheiro no diretório de trabalho."
+
+#: src/cards.ts:320
+msgid "Create a new tag at the HEAD commit."
+msgstr "Cria uma nova tag no commit HEAD."
+
+#: src/achievements.ts:260
+msgid "Create an octopus merge commit with three or more parents"
+msgstr "Criar um commit de merge octopus com três ou mais pais"
+
+#: src/cards.ts:193
+msgid "Create an empty file in the working directory."
+msgstr "Cria um ficheiro vazio no diretório de trabalho."
+
+#: src/achievements.ts:162
+msgid "Create commits"
+msgstr "Criar commits"
+
+#: src/achievements.ts:21
+msgid "Create files (with different content)"
+msgstr "Criar ficheiros (com conteúdo diferente)"
+
+#: src/achievements.ts:198
+msgid "Create tags"
+msgstr "Criar tags"
+
+#: src/achievements.ts:215
+msgid "Create tags on different commits"
+msgstr "Criar tags em commits diferentes"
+
+#: src/Decision.svelte:53
+msgid "Current deck"
+msgstr "Baralho atual"
+
+#: src/Win.svelte:36
+msgid "Date:"
+msgstr "Data:"
+
+#: src/cards.ts:326
+msgid "Delete a tag."
+msgstr "Elimina uma tag."
+
+#: src/achievements.ts:101
+msgid "Delete entries from the index"
+msgstr "Eliminar entradas do índice"
+
+#: src/achievements.ts:34
+msgid "Delete files (with different content)"
+msgstr "Eliminar ficheiros (com conteúdo diferente)"
+
+#: src/achievements.ts:179
+msgid "Detach your HEAD (from a non-detached state)"
+msgstr "Desanexar o HEAD (a partir de um estado não desanexado)"
+
+#: src/Win.svelte:13
+msgid "Diploma awarded"
+msgstr "Diploma atribuído"
+
+#. js-lingui-explicit-id
+#: src/cards.ts:681
+msgid "dI6Uf/"
+msgstr "Comando falhou: {0}"
+
+#: src/Achievements.svelte:27
+msgid "Done"
+msgstr "Feito"
+
+#: src/Graph.svelte:89
+msgid "Enter fullscreen"
+msgstr "Entrar em ecrã inteiro"
+
+#: src/StateIndicator.svelte:27
+msgid "Enter text: "
+msgstr "Introduz texto: "
+
+#: src/Graph.svelte:89
+msgid "Exit fullscreen"
+msgstr "Sair do ecrã inteiro"
+
+#: src/RepoAdder.svelte:31
+msgid "folder name"
+msgstr "nome da pasta"
+
+#: src/Win.svelte:25
+msgid "For demonstrating proficiency in these Git skills:"
+msgstr "Por demonstrar domínio nestas competências do Git:"
+
+#. js-lingui-explicit-id
+#: src/Win.svelte:16
+msgid "GEZ/7l"
+msgstr "Diploma Git"
+
+#: src/Win.svelte:28
+msgid "HEAD manipulation"
+msgstr "Manipulação do HEAD"
+
+#: src/Cards.svelte:38
+msgid "Index"
+msgstr "Índice"
+
+#. js-lingui-explicit-id
+#: src/Graph.svelte:85
+msgid "D22+/M"
+msgstr "Índice e diretório de trabalho"
+
+#. js-lingui-explicit-id
+#: src/Win.svelte:30
+msgid "NJQ//A"
+msgstr "Domínio do índice e área de trabalho"
+
+#: src/RepoAdder.svelte:42
+msgid "initialize"
+msgstr "inicializar"
+
+#: src/cards.ts:211
+msgid "Joker! Run an arbitrary command."
+msgstr "Joker! Executa um comando à escolha."
+
+#: src/Path.svelte:31
+msgid "Journey to your Git diploma"
+msgstr "Jornada para o teu diploma Git"
+
+#: src/achievements.ts:47
+msgid "Make copies of files"
+msgstr "Fazer cópias de ficheiros"
+
+#: src/cards.ts:284
+msgid "Make a copy a file."
+msgstr "Faz uma cópia de um ficheiro."
+
+#: src/Menu.svelte:10
+msgid "Master Git through gameplay with a clean, visual experience."
+msgstr "Domina o Git através do jogo com uma experiência visual e intuitiva."
+
+#. js-lingui-explicit-id
+#: src/cards.ts:308
+msgid "jb/LQX"
+msgstr "Faz merge do último commit de stash do diretório de trabalho no diretório de trabalho."
+
+#: src/cards.ts:350
+msgid "Merge the specified commit into the current HEAD commit, and set index and working directory to the result. Does nothing if the specified commit is already an ancestor of HEAD."
+msgstr "Faz merge do commit especificado no commit HEAD atual, e define o índice e o diretório de trabalho com o resultado. Não faz nada se o commit especificado já for um ancestral do HEAD."
+
+#: src/Win.svelte:29
+msgid "Merging, rebasing, and cherry-picking"
+msgstr "Merge, rebase e cherry-pick"
+
+#: src/achievements.ts:64
+msgid "Move files"
+msgstr "Mover ficheiros"
+
+#: src/cards.ts:296
+msgid "Move a file from one file to another in both the working directory and index."
+msgstr "Move um ficheiro de um local para outro no diretório de trabalho e no índice."
+
+#: src/RepoAdder.svelte:25
+msgid "Path"
+msgstr "Caminho"
+
+#: src/cards.ts:664
+msgid "Played {0}."
+msgstr "{0} jogado."
+
+#: src/Achievements.svelte:16
+msgid "Points"
+msgstr "Pontos"
+
+#: src/Win.svelte:22
+msgid "Presented to"
+msgstr "Apresentado a"
+
+#: src/Win.svelte:40
+msgid "Print"
+msgstr "Imprimir"
+
+#: src/Battle.svelte:297
+msgid "Refreshing..."
+msgstr "A atualizar..."
+
+#: src/cards.ts:236
+msgid "Remove a file from the index."
+msgstr "Remove um ficheiro do índice."
+
+#: src/cards.ts:230
+msgid "Remove a file in the working directory."
+msgstr "Remove um ficheiro do diretório de trabalho."
+
+#: src/cards.ts:290
+msgid "Rename a file."
+msgstr "Renomeia um ficheiro."
+
+#: src/Win.svelte:27
+msgid "Repository creation & branching"
+msgstr "Criação de repositórios e ramos"
+
+#: src/achievements.ts:115
+msgid "Restore files from the index"
+msgstr "Restaurar ficheiros do índice"
+
+#. js-lingui-explicit-id
+#: src/cards.ts:272
+msgid "rl/8FN"
+msgstr "Commit"
+
+#: src/cards.ts:649
+#: src/cards.ts:675
+msgid "Running \"{0}\""
+msgstr "A executar \"{0}\""
+
+#: src/StateIndicator.svelte:24
+msgid "Select commit/branch/tag"
+msgstr "Seleciona commit/ramo/tag"
+
+#: src/StateIndicator.svelte:21
+msgid "Select file"
+msgstr "Seleciona ficheiro"
+
+#: src/Path.svelte:32
+msgid "Select the next stop to continue your adventure through git concepts and challenges."
+msgstr "Seleciona a próxima paragem para continuar a tua aventura pelos conceitos e desafios do Git."
+
+#: src/cards.ts:332
+msgid "Set HEAD to a branch, and reset the working directory and index to that commit."
+msgstr "Define o HEAD para um ramo e repõe o diretório de trabalho e o índice nesse commit."
+
+#: src/cards.ts:338
+msgid "Set HEAD to a commit, and reset the working directory and index to that commit."
+msgstr "Define o HEAD para um commit e repõe o diretório de trabalho e o índice nesse commit."
+
+#: src/Achievements.svelte:35
+msgid "Show Diploma"
+msgstr "Mostrar Diploma"
+
+#: src/cards.ts:356
+msgid "Show the commit history starting at HEAD."
+msgstr "Mostra o histórico de commits a partir do HEAD."
+
+#: src/cards.ts:374
+msgid "Show the difference between the index and the HEAD commit."
+msgstr "Mostra a diferença entre o índice e o commit HEAD."
+
+#: src/cards.ts:368
+msgid "Show the difference between the working directory and index."
+msgstr "Mostra a diferença entre o diretório de trabalho e o índice."
+
+#: src/cards.ts:362
+msgid "Show the status of the working directory and index."
+msgstr "Mostra o estado do diretório de trabalho e do índice."
+
+#: src/Win.svelte:36
+msgid "Signed: {0}"
+msgstr "Assinado: {0}"
+
+#: src/Decision.svelte:20
+msgid "Skip"
+msgstr "Saltar"
+
+#: src/App.svelte:118
+msgid "Starting game..."
+msgstr "A iniciar o jogo..."
+
+#: src/Path.svelte:34
+msgid "stops"
+msgstr "paragens"
+
+#: src/Decision.svelte:54
+msgid "These cards are currently available in your queue."
+msgstr "Estas cartas estão atualmente disponíveis na tua fila."
+
+#: src/Path.svelte:79
+msgid "These cards shape the git actions available in your next battles."
+msgstr "Estas cartas definem as ações Git disponíveis nos teus próximos combates."
+
+#: src/Achievements.svelte:14
+msgid "Track progress on git milestones and unlock the diploma."
+msgstr "Acompanha o progresso nos marcos do Git e desbloqueia o diploma."
+
+#: src/Graph.svelte:80
+msgid "Trees & blobs"
+msgstr "Árvores e blobs"
+
+#: src/StateIndicator.svelte:34
+msgid "Unknown placeholder"
+msgstr "Marcador desconhecido"
+
+#: src/StateIndicator.svelte:38
+msgid "Unknown state :("
+msgstr "Estado desconhecido :("
+
+#: src/StateIndicator.svelte:16
+msgid "Waiting..."
+msgstr "A aguardar..."
+
+#: src/Cards.svelte:19
+msgid "Working directory"
+msgstr "Diretório de trabalho"
+
+#: src/cards.ts:495
+msgid "You may remove a card from your deck!"
+msgstr "Podes remover uma carta do teu baralho!"
+
+#: src/Path.svelte:78
+msgid "Your current deck"
+msgstr "O teu baralho atual"

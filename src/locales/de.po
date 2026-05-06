@@ -14,84 +14,140 @@ msgstr ""
 "X-Generator: Poedit 3.3.2\n"
 
 #: src/cards.ts:395
-msgid " and "
-msgstr " und "
+#~ msgid " and "
+#~ msgstr " und "
 
 #: src/cards.ts:1441
-msgid "{0} dealt {1} damage to the enemy player."
-msgstr "{0} fügte dem gegnerischen Spieler {1} Schaden zu."
+#~ msgid "{0} dealt {1} damage to the enemy player."
+#~ msgstr "{0} fügte dem gegnerischen Spieler {1} Schaden zu."
 
 #: src/cards.ts:251
-msgid "{0} equal to {1}"
-msgstr "soviel {0} wie {1}"
+#~ msgid "{0} equal to {1}"
+#~ msgstr "soviel {0} wie {1}"
 
 #: src/cards.ts:356
-msgid "{num, plural, one {draw a card} other {draw # cards}}"
-msgstr "{num, plural, one {ziehe eine Karte} other {ziehe # Karten}}"
+#~ msgid "{num, plural, one {draw a card} other {draw # cards}}"
+#~ msgstr "{num, plural, one {ziehe eine Karte} other {ziehe # Karten}}"
 
-#: src/cards.ts:558
-#~ msgid "Add"
-#~ msgstr "Hinzufügen"
+#: src/Achievements.svelte:13
+msgid "Achievements"
+msgstr ""
+
+#: src/RepoAdder.svelte:44
+msgid "Add"
+msgstr "Hinzufügen"
 
 #: src/cards.ts:311
-msgid "add a {0} to your hand"
-msgstr "füge {0} deiner Hand hinzu"
+#~ msgid "add a {0} to your hand"
+#~ msgstr "füge {0} deiner Hand hinzu"
 
 #: src/cards.ts:1107
-msgid "Add a card to your deck!"
-msgstr "Füge deinem Deck eine Karte hinzu!"
+#~ msgid "Add a card to your deck!"
+#~ msgstr "Füge deinem Deck eine Karte hinzu!"
 
 #: src/cards.ts:564
 #~ msgid "Add all"
 #~ msgstr "Alle hinzufügen"
 
+#: src/cards.ts:278
+msgid "Add changed files to the index and commit."
+msgstr ""
+
+#: src/achievements.ts:87
+msgid "Add files to the index"
+msgstr "Dateien zum Index hinzufügen"
+
 #: src/cards.ts:318
-msgid "Added a {0} to your hand."
-msgstr "{0} wurde deiner Hand hinzugefügt."
+#~ msgid "Added a {0} to your hand."
+#~ msgstr "{0} wurde deiner Hand hinzugefügt."
 
 #: src/Win.svelte:28
-msgid "Advanced Git magic"
-msgstr "Fortgeschrittene Git-Magie"
+#~ msgid "Advanced Git magic"
+#~ msgstr "Fortgeschrittene Git-Magie"
 
-#: src/cards.ts:1402
+#: src/Win.svelte:31
+msgid "Advanced git workflow skills"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: src/cards.ts:205
+msgid "tuB+Kl"
+msgstr ""
+
+#: src/cards.ts:699
 msgid "Automatically creating a commit."
 msgstr "Erstelle automatisch einen Commit."
 
-#: src/cards.ts:761
-msgid "Bandaid"
-msgstr "Pflaster"
+#: src/Win.svelte:17
+msgid "Awarded for completing OMG Sigma Pathway"
+msgstr ""
 
-#: src/Win.svelte:42
+#: src/cards.ts:761
+#~ msgid "Bandaid"
+#~ msgstr "Pflaster"
+
+#: src/RepoAdder.svelte:38
+msgid "bare"
+msgstr ""
+
+#: src/Win.svelte:36
 msgid "Big Sig & Lil Siggy"
 msgstr "Big Sig & Lil Siggy"
 
 #: src/cards.ts:524
-msgid "Blob Eater"
-msgstr "Blobfresser"
+#~ msgid "Blob Eater"
+#~ msgstr "Blobfresser"
 
 #: src/cards.ts:643
 #~ msgid "Branch"
 #~ msgstr "Branch"
 
+#: src/Decision.svelte:44
+msgid "Bundle"
+msgstr ""
+
+#: src/Decision.svelte:56
+#: src/Path.svelte:81
+msgid "cards"
+msgstr ""
+
 #: src/cards.ts:655
 #~ msgid "Checkout"
 #~ msgstr "Checkout"
 
+#: src/Decision.svelte:18
+msgid "Choose how you want to shape your next git encounter."
+msgstr ""
+
 #: src/Win.svelte:27
-msgid "Cleaning up after yourself"
-msgstr "Hinter sich aufräümen"
+#~ msgid "Cleaning up after yourself"
+#~ msgstr "Hinter sich aufräümen"
 
 #: src/cards.ts:548
-msgid "Clone Warrior"
-msgstr "Klonkrieger"
+#~ msgid "Clone Warrior"
+#~ msgstr "Klonkrieger"
+
+#: src/Win.svelte:41
+msgid "Close"
+msgstr ""
 
 #: src/cards.ts:580
-msgid "Collab Centaur"
-msgstr "Zusammenarbeitszentaur"
+#~ msgid "Collab Centaur"
+#~ msgstr "Zusammenarbeitszentaur"
+
+#. js-lingui-explicit-id
+#: src/cards.ts:681
+msgid "dI6Uf/"
+msgstr ""
 
 #: src/cards.ts:1384
-msgid "Command failed: {0}"
-msgstr "Befehl fehlgeschlagen: {0}"
+#~ msgid "Command failed: {0}"
+#~ msgstr "Befehl fehlgeschlagen: {0}"
+
+#. js-lingui-explicit-id
+#: src/cards.ts:272
+msgid "rl/8FN"
+msgstr ""
 
 #: src/cards.ts:584
 #~ msgid "Commit"
@@ -102,10 +158,14 @@ msgstr "Befehl fehlgeschlagen: {0}"
 #~ msgstr "Alles committen"
 
 #: src/Hand.svelte:66
-msgid "Commit!"
-msgstr "Commit!"
+#~ msgid "Commit!"
+#~ msgstr "Commit!"
 
-#: src/cards.ts:689
+#: src/Achievements.svelte:37
+msgid "Complete all achievements to earn your Git diploma."
+msgstr ""
+
+#: src/cards.ts:302
 msgid "Convert working directory and index into stash commits. Then, reset them to the HEAD commit."
 msgstr "Verwandele Arbeitsverzeichnis und Index in Stash-Commits. Setze sie dann auf den HEAD-Commit zurück."
 
@@ -114,88 +174,195 @@ msgstr "Verwandele Arbeitsverzeichnis und Index in Stash-Commits. Setze sie dann
 #~ msgstr "Kopieren"
 
 #: src/cards.ts:671
-msgid "Copy a card from one working directory slot to another."
-msgstr "Kopiere eine Karte von einem Arbeitsverzeichnis-Slot zu einem anderen."
+#~ msgid "Copy a card from one working directory slot to another."
+#~ msgstr "Kopiere eine Karte von einem Arbeitsverzeichnis-Slot zu einem anderen."
 
 #: src/cards.ts:645
-msgid "Copy a card from the HEAD commit to the index."
-msgstr "Kopiere eine Karte aus dem HEAD-Commit in den Index."
+#~ msgid "Copy a card from the HEAD commit to the index."
+#~ msgstr "Kopiere eine Karte aus dem HEAD-Commit in den Index."
 
 #: src/cards.ts:627
-msgid "Copy a card from the index to the working directory."
-msgstr "Kopiere eine Karte aus dem Index ins Arbeitsverzeichnis."
+#~ msgid "Copy a card from the index to the working directory."
+#~ msgstr "Kopiere eine Karte aus dem Index ins Arbeitsverzeichnis."
 
 #: src/cards.ts:651
-msgid "Copy a card from the specified commit to the index."
-msgstr "Kopiere eine Karte aus dem angegebenen Commit in den Index."
+#~ msgid "Copy a card from the specified commit to the index."
+#~ msgstr "Kopiere eine Karte aus dem angegebenen Commit in den Index."
 
 #: src/cards.ts:639
-msgid "Copy a card from the specified commit to the working directory."
-msgstr "Kopiere eine Karte aus dem angegebenen Commit ins Arbeitsverzeichnis."
+#~ msgid "Copy a card from the specified commit to the working directory."
+#~ msgstr "Kopiere eine Karte aus dem angegebenen Commit ins Arbeitsverzeichnis."
 
 #: src/cards.ts:607
-msgid "Copy a card from the working directory to the index."
-msgstr "Kopiere eine Karte aus dem Arbeitsverzeichnis in den Index."
+#~ msgid "Copy a card from the working directory to the index."
+#~ msgstr "Kopiere eine Karte aus dem Arbeitsverzeichnis in den Index."
+
+#. js-lingui-explicit-id
+#: src/cards.ts:260
+msgid "wvDQZ+"
+msgstr ""
+
+#: src/cards.ts:242
+msgid "Copy a file from the index to the working directory."
+msgstr ""
+
+#: src/cards.ts:266
+msgid "Copy a file from the specified commit to the index."
+msgstr ""
+
+#: src/cards.ts:254
+msgid "Copy a file from the specified commit to the working directory."
+msgstr ""
+
+#: src/cards.ts:218
+msgid "Copy a file from the working directory to the index."
+msgstr ""
 
 #: src/cards.ts:633
-msgid "Copy all cards from the index to the working directory."
-msgstr "Kopiere alle Karten aus dem Index ins Arbeitsverzeichnis."
+#~ msgid "Copy all cards from the index to the working directory."
+#~ msgstr "Kopiere alle Karten aus dem Index ins Arbeitsverzeichnis."
 
 #: src/cards.ts:614
-msgid "Copy all cards from the working directory to the index."
-msgstr "Kopiere alle Karten aus dem Arbeitsverzeichnis in den Index."
+#~ msgid "Copy all cards from the working directory to the index."
+#~ msgstr "Kopiere alle Karten aus dem Arbeitsverzeichnis in den Index."
 
-#: src/cards.ts:701
+#. js-lingui-explicit-id
+#: src/cards.ts:248
+msgid "DhnZt+"
+msgstr ""
+
+#: src/cards.ts:224
+msgid "Copy all files from the working directory to the index."
+msgstr ""
+
+#: src/achievements.ts:236
+msgid "Create a merge conflict"
+msgstr "Einen Merge-Konflikt erzeugen"
+
+#: src/cards.ts:314
 msgid "Create a new branch at the HEAD commit."
 msgstr "Erstelle am HEAD-Commit einen neuen Branch."
 
-#: src/cards.ts:708
+#. js-lingui-explicit-id
+#: src/cards.ts:199
+msgid "+7hBFY"
+msgstr ""
+
+#: src/cards.ts:320
 msgid "Create a new tag at the HEAD commit."
 msgstr "Erstelle am HEAD-Commit einen neuen Tag."
 
+#: src/cards.ts:193
+msgid "Create an empty file in the working directory."
+msgstr ""
+
+#: src/achievements.ts:260
+msgid "Create an octopus merge commit with three or more parents"
+msgstr "Einen Octopus-Merge-Commit mit drei oder mehr Eltern erstellen"
+
+#: src/achievements.ts:162
+msgid "Create commits"
+msgstr "Commits erstellen"
+
+#: src/achievements.ts:21
+msgid "Create files (with different content)"
+msgstr "Dateien erstellen (mit unterschiedlichem Inhalt)"
+
+#: src/achievements.ts:47
+msgid "Make copies of files"
+msgstr "Dateien kopieren"
+
+#: src/achievements.ts:64
+msgid "Move files"
+msgstr "Dateien verschieben"
+
+#: src/achievements.ts:101
+msgid "Delete entries from the index"
+msgstr "Einträge aus dem Index löschen"
+
+#: src/achievements.ts:115
+msgid "Restore files from the index"
+msgstr "Dateien aus dem Index wiederherstellen"
+
+#: src/achievements.ts:179
+msgid "Detach your HEAD (from a non-detached state)"
+msgstr "HEAD lösen (aus einem nicht losgelösten Zustand)"
+
+#: src/achievements.ts:198
+msgid "Create tags"
+msgstr "Tags erstellen"
+
+#: src/achievements.ts:215
+msgid "Create tags on different commits"
+msgstr "Tags auf verschiedenen Commits erstellen"
+
 #: src/Win.svelte:24
-msgid "Creating and cloning repositories"
-msgstr "Erstellen und Klonen von Repositories"
+#~ msgid "Creating and cloning repositories"
+#~ msgstr "Erstellen und Klonen von Repositories"
+
+#: src/Decision.svelte:53
+msgid "Current deck"
+msgstr ""
+
+#: src/Win.svelte:36
+msgid "Date:"
+msgstr ""
 
 #: src/Win.svelte:43
-msgid "Date: {0}"
-msgstr "Datum: {0}"
+#~ msgid "Date: {0}"
+#~ msgstr "Datum: {0}"
 
 #: src/cards.ts:330
-msgid "delete a random enemy"
-msgstr "lösche einen zufälligen Gegner"
+#~ msgid "delete a random enemy"
+#~ msgstr "lösche einen zufälligen Gegner"
+
+#: src/cards.ts:326
+msgid "Delete a tag."
+msgstr ""
+
+#: src/achievements.ts:34
+msgid "Delete files (with different content)"
+msgstr "Dateien löschen (mit unterschiedlichem Inhalt)"
 
 #: src/cards.ts:564
-msgid "Detached Head"
-msgstr "Abgetrennter Kopf"
+#~ msgid "Detached Head"
+#~ msgstr "Abgetrennter Kopf"
 
 #: src/Win.svelte:25
-msgid "Detaching HEADs"
-msgstr "HEADs detachen"
+#~ msgid "Detaching HEADs"
+#~ msgstr "HEADs detachen"
+
+#: src/Win.svelte:13
+msgid "Diploma awarded"
+msgstr ""
 
 #: src/Hand.svelte:23
 #~ msgid "Discard pile"
 #~ msgstr "Ablagestapel"
+
+#: src/Achievements.svelte:27
+msgid "Done"
+msgstr ""
 
 #: src/Hand.svelte:22
 #~ msgid "Draw pile"
 #~ msgstr "Zugstapel"
 
 #: src/Cards.svelte:33
-msgid "Enemy"
-msgstr "Gegner"
+#~ msgid "Enemy"
+#~ msgstr "Gegner"
 
 #: src/cards.ts:1420
-msgid "Enemy {0} dealt {1} damage to {2}."
-msgstr "Gegner {0} fügte {2} {1} Schaden zu."
+#~ msgid "Enemy {0} dealt {1} damage to {2}."
+#~ msgstr "Gegner {0} fügte {2} {1} Schaden zu."
 
 #: src/cards.ts:1452
-msgid "Enemy {0} dealt {1} damage to you."
-msgstr "Gegner {0} fügte dir {1} Schaden zu."
+#~ msgid "Enemy {0} dealt {1} damage to you."
+#~ msgstr "Gegner {0} fügte dir {1} Schaden zu."
 
 #: src/cards.ts:1371
-msgid "Enemy announced {0} at slot {1}."
-msgstr "Der Gegner hat {0} auf Slot {1} angekündigt."
+#~ msgid "Enemy announced {0} at slot {1}."
+#~ msgstr "Der Gegner hat {0} auf Slot {1} angekündigt."
 
 #: src/Cards.svelte:45
 #~ msgid "Enemy cards"
@@ -206,14 +373,18 @@ msgstr "Der Gegner hat {0} auf Slot {1} angekündigt."
 #~ msgstr "Gesundheit des Gegners"
 
 #: src/cards.ts:279
-msgid "energy"
-msgstr "Energie"
+#~ msgid "energy"
+#~ msgstr "Energie"
 
 #: src/Hand.svelte:22
 #~ msgid "Energy"
 #~ msgstr "Energie"
 
-#: src/StateIndicator.svelte:28
+#: src/Graph.svelte:89
+msgid "Enter fullscreen"
+msgstr ""
+
+#: src/StateIndicator.svelte:27
 msgid "Enter text: "
 msgstr "Gib Text ein: "
 
@@ -221,45 +392,66 @@ msgstr "Gib Text ein: "
 #~ msgid "Event log"
 #~ msgstr "Ereignisprotokoll"
 
+#: src/Graph.svelte:89
+msgid "Exit fullscreen"
+msgstr ""
+
+#: src/RepoAdder.svelte:31
+msgid "folder name"
+msgstr ""
+
+#: src/Win.svelte:25
+msgid "For demonstrating proficiency in these Git skills:"
+msgstr ""
+
 #: src/Win.svelte:22
-msgid "For mastering the following skills:"
-msgstr "Für das Meistern der folgenden Skills:"
+#~ msgid "For mastering the following skills:"
+#~ msgstr "Für das Meistern der folgenden Skills:"
 
 #: src/cards.ts:279
-msgid "gain {0}"
-msgstr "erhalte {0}"
+#~ msgid "gain {0}"
+#~ msgstr "erhalte {0}"
 
 #: src/cards.ts:284
-msgid "Gain {0} energy"
-msgstr "Erhalte {0} Energie"
+#~ msgid "Gain {0} energy"
+#~ msgstr "Erhalte {0} Energie"
 
 #: src/Win.svelte:32
-msgid "Game was finished with {0} cards in the deck:"
-msgstr "Das Spiel wurde mit {0} Karten im Deck abgeschlossen:"
+#~ msgid "Game was finished with {0} cards in the deck:"
+#~ msgstr "Das Spiel wurde mit {0} Karten im Deck abgeschlossen:"
+
+#. js-lingui-explicit-id
+#: src/Win.svelte:16
+msgid "GEZ/7l"
+msgstr ""
 
 #: src/Win.svelte:14
-msgid "Git Diploma"
-msgstr "Git-Diplom"
+#~ msgid "Git Diploma"
+#~ msgstr "Git-Diplom"
 
 #: src/cards.ts:417
-msgid "give all allies +{0}/{1}"
-msgstr "gib allen Verbündeten +{0}/{1}"
+#~ msgid "give all allies +{0}/{1}"
+#~ msgstr "gib allen Verbündeten +{0}/{1}"
 
 #: src/cards.ts:376
 #~ msgid "give all friends +{0}/{1}"
 #~ msgstr "gib allen Freunden +{0}/{1}"
 
 #: src/cards.ts:510
-msgid "Graph Gnome"
-msgstr "Graphgnom"
+#~ msgid "Graph Gnome"
+#~ msgstr "Graphgnom"
+
+#: src/Win.svelte:28
+msgid "HEAD manipulation"
+msgstr ""
 
 #: src/cards.ts:263
-msgid "heal yourself by {0}"
-msgstr "heile dich um {0}"
+#~ msgid "heal yourself by {0}"
+#~ msgstr "heile dich um {0}"
 
 #: src/cards.ts:268
-msgid "Healed for {0}"
-msgstr "Geheilt um {0}"
+#~ msgid "Healed for {0}"
+#~ msgstr "Geheilt um {0}"
 
 #: src/cards.ts:242
 #~ msgid "Healed yourself for {0} points."
@@ -270,113 +462,183 @@ msgstr "Geheilt um {0}"
 #~ msgstr "Gesundheit"
 
 #: src/cards.ts:747
-msgid "Health potion"
-msgstr "Heiltrank"
+#~ msgid "Health potion"
+#~ msgstr "Heiltrank"
 
 #: src/cards.ts:383
-msgid "increase its own attack by {0}"
-msgstr "erhöhe den Angriff der Karte um {0}"
+#~ msgid "increase its own attack by {0}"
+#~ msgstr "erhöhe den Angriff der Karte um {0}"
 
 #: src/cards.ts:390
-msgid "increase its own health by {0}"
-msgstr "erhöhe die Gesundheit der Karte um {0}"
+#~ msgid "increase its own health by {0}"
+#~ msgstr "erhöhe die Gesundheit der Karte um {0}"
 
-#: src/Cards.svelte:80
+#: src/Cards.svelte:38
 msgid "Index"
 msgstr "Index"
 
-#: src/cards.ts:770
-msgid "Inspiration"
-msgstr "Inspiration"
+#. js-lingui-explicit-id
+#: src/Graph.svelte:85
+msgid "D22+/M"
+msgstr ""
 
-#: src/cards.ts:600
+#. js-lingui-explicit-id
+#: src/Win.svelte:30
+msgid "NJQ//A"
+msgstr ""
+
+#: src/RepoAdder.svelte:42
+msgid "initialize"
+msgstr ""
+
+#: src/cards.ts:770
+#~ msgid "Inspiration"
+#~ msgstr "Inspiration"
+
+#: src/cards.ts:211
 msgid "Joker! Run an arbitrary command."
 msgstr "Joker! Führe einen beliebigen Befehl aus."
 
+#: src/Path.svelte:31
+msgid "Journey to your Git diploma"
+msgstr ""
+
 #: src/cards.ts:754
-msgid "Library"
-msgstr "Bibliothek"
+#~ msgid "Library"
+#~ msgstr "Bibliothek"
+
+#: src/cards.ts:284
+msgid "Make a copy a file."
+msgstr ""
 
 #: src/Path.svelte:19
-msgid "Make it all the way to the end to get your Git diploma!"
-msgstr "Schaff es ganz bis zum Ende, um dein Git-Diplom zu erhalten!"
+#~ msgid "Make it all the way to the end to get your Git diploma!"
+#~ msgstr "Schaff es ganz bis zum Ende, um dein Git-Diplom zu erhalten!"
+
+#: src/Menu.svelte:10
+msgid "Master Git through gameplay with a clean, visual experience."
+msgstr ""
 
 #: src/cards.ts:661
 #~ msgid "Merge"
 #~ msgstr "Merge"
 
 #: src/cards.ts:556
-msgid "Merge Monster"
-msgstr "Merge-Monster"
+#~ msgid "Merge Monster"
+#~ msgstr "Merge-Monster"
+
+#. js-lingui-explicit-id
+#: src/cards.ts:308
+msgid "jb/LQX"
+msgstr ""
 
 #: src/cards.ts:695
-msgid "Merge the last working directory stash commit into the working directory."
-msgstr "Merge den letzten Stash-Commit des Arbeitsverzeichnisses ins Arbeitsverzeichnis."
+#~ msgid "Merge the last working directory stash commit into the working directory."
+#~ msgstr "Merge den letzten Stash-Commit des Arbeitsverzeichnisses ins Arbeitsverzeichnis."
 
-#: src/cards.ts:733
+#: src/cards.ts:350
 msgid "Merge the specified commit into the current HEAD commit, and set index and working directory to the result. Does nothing if the specified commit is already an ancestor of HEAD."
 msgstr "Merge den angegebenen Commit in den aktuellen HEAD-Commit, und setze Index und Arbeitsverzeichnis auf das Ergebnis. Tut nichts, wenn der angegebene Commit bereits ein Vorfahre von HEAD ist."
+
+#: src/Win.svelte:29
+msgid "Merging, rebasing, and cherry-picking"
+msgstr ""
 
 #: src/cards.ts:625
 #~ msgid "Move"
 #~ msgstr "Verschieben"
 
 #: src/cards.ts:683
-msgid "Move a card from one slot to another in both the working directory and index."
-msgstr "Verschiebe eine Karte im Arbeitsverzeichnis und Index von einem Slot zu einem anderen."
+#~ msgid "Move a card from one slot to another in both the working directory and index."
+#~ msgstr "Verschiebe eine Karte im Arbeitsverzeichnis und Index von einem Slot zu einem anderen."
 
 #: src/cards.ts:677
-msgid "Move a card from one working directory slot to another."
-msgstr "Verschiebe eine Karte im Arbeitsverzeichnis von einem Slot zu einem anderen."
+#~ msgid "Move a card from one working directory slot to another."
+#~ msgstr "Verschiebe eine Karte im Arbeitsverzeichnis von einem Slot zu einem anderen."
+
+#: src/cards.ts:296
+msgid "Move a file from one file to another in both the working directory and index."
+msgstr ""
 
 #: src/cards.ts:1319
-msgid "Not enough energy to play {0}."
-msgstr "Nicht genug Energie, um {0} zu spielen."
+#~ msgid "Not enough energy to play {0}."
+#~ msgstr "Nicht genug Energie, um {0} zu spielen."
 
 #: src/Win.svelte:15
-msgid "On completing OMG Sigma Pathway!"
-msgstr "Für das Abschließen des OMG Sigma Pathway!"
+#~ msgid "On completing OMG Sigma Pathway!"
+#~ msgstr "Für das Abschließen des OMG Sigma Pathway!"
+
+#: src/RepoAdder.svelte:25
+msgid "Path"
+msgstr ""
 
 #: src/Decision.svelte:11
 #~ msgid "Pick a card!"
 #~ msgstr "Wähle eine Karte!"
 
 #: src/cards.ts:1333
-msgid "Played {0} to slot {1}."
-msgstr "Du hast {0} auf Slot {1} gespielt."
+#~ msgid "Played {0} to slot {1}."
+#~ msgstr "Du hast {0} auf Slot {1} gespielt."
 
-#: src/cards.ts:1349
-#: src/cards.ts:1357
+#: src/cards.ts:664
 msgid "Played {0}."
 msgstr "{0} gespielt."
+
+#: src/Achievements.svelte:16
+msgid "Points"
+msgstr ""
 
 #: src/cards.ts:637
 #~ msgid "Pop stash"
 #~ msgstr "Stash poppen"
 
-#: src/Win.svelte:19
-msgid "Presented to:"
-msgstr "Überreicht an:"
+#: src/Win.svelte:22
+msgid "Presented to"
+msgstr ""
 
-#: src/Win.svelte:47
+#: src/Win.svelte:19
+#~ msgid "Presented to:"
+#~ msgstr "Überreicht an:"
+
+#: src/Win.svelte:40
 msgid "Print"
 msgstr "Drucken"
 
 #: src/Win.svelte:26
-msgid "Rebasing and cherry-picking"
-msgstr "Rebasen und Cherry-Picking"
+#~ msgid "Rebasing and cherry-picking"
+#~ msgstr "Rebasen und Cherry-Picking"
+
+#: src/Battle.svelte:297
+msgid "Refreshing..."
+msgstr ""
 
 #: src/cards.ts:570
 #~ msgid "Remove"
 #~ msgstr "Entfernen"
 
 #: src/cards.ts:620
-msgid "Remove a card in the working directory."
-msgstr "Entferne eine Karte im Arbeitsverzeichnis."
+#~ msgid "Remove a card in the working directory."
+#~ msgstr "Entferne eine Karte im Arbeitsverzeichnis."
+
+#: src/cards.ts:236
+msgid "Remove a file from the index."
+msgstr ""
+
+#: src/cards.ts:230
+msgid "Remove a file in the working directory."
+msgstr ""
+
+#: src/cards.ts:290
+msgid "Rename a file."
+msgstr ""
 
 #: src/cards.ts:540
-msgid "Repo Raven"
-msgstr "Repo-Rabe"
+#~ msgid "Repo Raven"
+#~ msgstr "Repo-Rabe"
+
+#: src/Win.svelte:27
+msgid "Repository creation & branching"
+msgstr ""
 
 #: src/cards.ts:576
 #: src/cards.ts:588
@@ -393,87 +655,143 @@ msgstr "Repo-Rabe"
 #~ msgstr "Index wiederherstellen"
 
 #: src/cards.ts:572
-msgid "Rubber Duck"
-msgstr "Gummiente"
+#~ msgid "Rubber Duck"
+#~ msgstr "Gummiente"
 
 #: src/cards.ts:295
-msgid "run \"{0}\""
-msgstr "führe \"{0}\" aus"
+#~ msgid "run \"{0}\""
+#~ msgstr "führe \"{0}\" aus"
 
-#: src/cards.ts:1302
-#: src/cards.ts:1378
+#: src/cards.ts:649
+#: src/cards.ts:675
 msgid "Running \"{0}\""
 msgstr "Führe \"{0}\" aus"
 
+#: src/StateIndicator.svelte:24
+msgid "Select commit/branch/tag"
+msgstr ""
+
+#: src/StateIndicator.svelte:21
+msgid "Select file"
+msgstr ""
+
 #: src/StateIndicator.svelte:25
-msgid "Select ref"
-msgstr "Klick auf einen Ref"
+#~ msgid "Select ref"
+#~ msgstr "Klick auf einen Ref"
 
 #: src/StateIndicator.svelte:22
-msgid "Select slot"
-msgstr "Klick auf einen Slot"
+#~ msgid "Select slot"
+#~ msgstr "Klick auf einen Slot"
 
-#: src/cards.ts:715
+#: src/Path.svelte:32
+msgid "Select the next stop to continue your adventure through git concepts and challenges."
+msgstr ""
+
+#: src/cards.ts:332
 msgid "Set HEAD to a branch, and reset the working directory and index to that commit."
 msgstr "Setze HEAD auf den angegebenen Branch, und setze Arbeitsverzeichnis und Index auf diesen Commit zurück."
 
-#: src/cards.ts:721
+#: src/cards.ts:338
 msgid "Set HEAD to a commit, and reset the working directory and index to that commit."
 msgstr "Setze HEAD auf den angegebenen Commit, und setze Arbeitsverzeichnis und Index auf diesen zurück."
 
-#: src/cards.ts:1526
-msgid "Shuffled discard pile into draw pile."
-msgstr "Ablagestapel wurde in Zugstapel gemischt."
+#: src/Achievements.svelte:35
+msgid "Show Diploma"
+msgstr ""
 
-#: src/Win.svelte:42
+#: src/cards.ts:356
+msgid "Show the commit history starting at HEAD."
+msgstr ""
+
+#: src/cards.ts:374
+msgid "Show the difference between the index and the HEAD commit."
+msgstr ""
+
+#: src/cards.ts:368
+msgid "Show the difference between the working directory and index."
+msgstr ""
+
+#: src/cards.ts:362
+msgid "Show the status of the working directory and index."
+msgstr ""
+
+#: src/cards.ts:1526
+#~ msgid "Shuffled discard pile into draw pile."
+#~ msgstr "Ablagestapel wurde in Zugstapel gemischt."
+
+#: src/Win.svelte:36
 msgid "Signed: {0}"
 msgstr "Unterschrift: {0}"
 
-#: src/Decision.svelte:15
+#: src/Decision.svelte:20
 msgid "Skip"
 msgstr "Überspringen"
+
+#: src/App.svelte:118
+msgid "Starting game..."
+msgstr ""
 
 #: src/cards.ts:631
 #~ msgid "Stash"
 #~ msgstr "Stash"
+
+#: src/Path.svelte:34
+msgid "stops"
+msgstr ""
 
 #: src/cards.ts:626
 #~ msgid "Switch"
 #~ msgstr "Switch"
 
 #: src/cards.ts:588
-msgid "Tag Troll"
-msgstr "Tag-Troll"
+#~ msgid "Tag Troll"
+#~ msgstr "Tag-Troll"
 
 #: src/cards.ts:450
-msgid "the length of the current branch"
-msgstr "die Länge des aktuellen Branches"
+#~ msgid "the length of the current branch"
+#~ msgstr "die Länge des aktuellen Branches"
 
 #: src/cards.ts:451
-msgid "the number of branches in your repository"
-msgstr "die Anzahl von Branches in deinem Repository"
+#~ msgid "the number of branches in your repository"
+#~ msgstr "die Anzahl von Branches in deinem Repository"
 
 #: src/cards.ts:449
-msgid "the number of commits in your repository"
-msgstr "die Anzahl von Commits in deinem Repository"
+#~ msgid "the number of commits in your repository"
+#~ msgstr "die Anzahl von Commits in deinem Repository"
 
 #: src/cards.ts:448
-msgid "the number of tags in your repository"
-msgstr "die Anzahl von Tags in deinem Repository"
+#~ msgid "the number of tags in your repository"
+#~ msgstr "die Anzahl von Tags in deinem Repository"
+
+#: src/Decision.svelte:54
+msgid "These cards are currently available in your queue."
+msgstr ""
+
+#: src/Path.svelte:79
+msgid "These cards shape the git actions available in your next battles."
+msgstr ""
 
 #: src/cards.ts:532
-msgid "Time Snail"
-msgstr "Zeitschnecke"
+#~ msgid "Time Snail"
+#~ msgstr "Zeitschnecke"
+
+#: src/Achievements.svelte:14
+msgid "Track progress on git milestones and unlock the diploma."
+msgstr ""
+
+#: src/Graph.svelte:80
+msgid "Trees & blobs"
+msgstr ""
 
 #: src/cards.ts:1518
-msgid "Tried to draw a card, but both draw and discard pile are empty."
-msgstr "Versuchte, eine Karte zu ziehen, aber Nachzieh- und Ablagestapel sind beide leer."
+#~ msgid "Tried to draw a card, but both draw and discard pile are empty."
+#~ msgstr "Versuchte, eine Karte zu ziehen, aber Nachzieh- und Ablagestapel sind beide leer."
 
-#: src/StateIndicator.svelte:35
+#: src/StateIndicator.svelte:34
 msgid "Unknown placeholder"
 msgstr "Unbekannter Platzhalter"
 
-#: src/StateIndicator.svelte:39
+#: src/StateIndicator.svelte:38
 msgid "Unknown state :("
 msgstr "Unbekannter Zustand :("
 
@@ -486,44 +804,44 @@ msgid "Waiting..."
 msgstr "Warte..."
 
 #: src/cards.ts:67
-msgid "when this card dies"
-msgstr "wenn diese Karte stirbt"
+#~ msgid "when this card dies"
+#~ msgstr "wenn diese Karte stirbt"
 
 #: src/cards.ts:66
-msgid "when this card is played"
-msgstr "wenn diese Karte gespielt wird"
+#~ msgid "when this card is played"
+#~ msgstr "wenn diese Karte gespielt wird"
 
-#: src/Cards.svelte:63
+#: src/Cards.svelte:19
 msgid "Working directory"
 msgstr "Arbeitsverzeichnis"
 
 #: src/Cards.svelte:27
-msgid "You"
-msgstr "Du"
+#~ msgid "You"
+#~ msgstr "Du"
 
 #: src/cards.ts:1531
-msgid "You drew {0}."
-msgstr "Du hast {0} gezogen."
+#~ msgid "You drew {0}."
+#~ msgstr "Du hast {0} gezogen."
 
 #: src/cards.ts:1482
-msgid "You ended your turn"
-msgstr "Du hast deinen Zug beendet"
+#~ msgid "You ended your turn"
+#~ msgstr "Du hast deinen Zug beendet"
 
-#: src/cards.ts:1118
+#: src/cards.ts:495
 msgid "You may remove a card from your deck!"
 msgstr "Entferne eine Karte aus deinem Deck, wenn du möchtest!"
 
 #: src/cards.ts:1427
-msgid "Your {0} dealt {1} damage to {2}."
-msgstr "Dein {0} hat {2} {1} Schaden zugefügt."
+#~ msgid "Your {0} dealt {1} damage to {2}."
+#~ msgstr "Dein {0} hat {2} {1} Schaden zugefügt."
 
-#: src/Decision.svelte:41
+#: src/Path.svelte:78
 msgid "Your current deck"
 msgstr "Dein aktuelles Deck"
 
 #: src/Path.svelte:47
-msgid "Your current deck:"
-msgstr "Dein aktuelles Deck:"
+#~ msgid "Your current deck:"
+#~ msgstr "Dein aktuelles Deck:"
 
 #: src/StateIndicator.svelte:13
 #~ msgid "Your turn"

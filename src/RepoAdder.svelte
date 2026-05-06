@@ -1,5 +1,6 @@
 <script lang="ts">
     import {createEventDispatcher} from "svelte"
+    import {t} from "svelte-i18n-lingui"
     const dispatch = createEventDispatcher()
 
     let path = ""
@@ -25,26 +26,26 @@
 <div id="wrapper" class="panel panel-surface">
     <div class="input-row">
         <label>
-            <span class="label-pill">Path</span>
+            <span class="label-pill">{$t`Path`}</span>
             <div class="input-group">
                 <span class="prefix">/tmp/</span>
                 <input
                     type="text"
                     bind:value={path}
-                    placeholder="folder name"
+                    placeholder={$t`folder name`}
                     on:keydown={keydown}
                 />
             </div>
         </label>
         <label class="checkbox-label">
             <input type="checkbox" bind:checked={bare} />
-            bare
+            {$t`bare`}
         </label>
         <label class="checkbox-label">
             <input type="checkbox" bind:checked={init} />
-            initialize
+            {$t`initialize`}
         </label>
-        <button on:click={add}>Add</button>
+        <button on:click={add}>{$t`Add`}</button>
     </div>
 </div>
 
