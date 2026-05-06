@@ -9,50 +9,111 @@
     $: points = tracker.getPoints()
 </script>
 
-<div id="wrapper">
+<div id="wrapper" class="panel">
+    <div class="heading">
+        <div>
+            <h2>Achievements</h2>
+            <p class="small-text">Track progress on git milestones and unlock the diploma.</p>
+        </div>
+        <div class="score label-pill">Points: {points}</div>
+    </div>
+
     <ul>
         {#each tracker.achievementProgresses as progress}
             <li
                 class:fullfilled={progress.progress >= progress.target}
-                class:peak={!progress.visible}
+                class:hidden={!progress.visible}
             >
-                {progress.achievement.description}
+                <span>{progress.achievement.description}</span>
+                {#if progress.progress >= progress.target}
+                    <span class="label-pill">Done</span>
+                {/if}
             </li>
         {/each}
     </ul>
-    {#if tracker.isComplete()}
-        <button
-            on:click={() => {
-                dispatch("showDiploma")
-            }}>Show Diploma</button
-        >
-    {:else}
-        <br /><b>Complete all achievements to get your Git diploma!</b>
-    {/if}
+
+    <div class="actions">
+        {#if tracker.isComplete()}
+            <button on:click={() => dispatch("showDiploma")}>Show Diploma</button>
+        {:else}
+            <p class="small-text">Complete all achievements to earn your Git diploma.</p>
+        {/if}
+    </div>
 </div>
 
 <style>
     #wrapper {
-        background: lightgrey;
-        padding: 0.5em;
         min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.25rem;
+        background: rgba(12, 21, 36, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1.5rem;
     }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 1.35rem;
+    }
+
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
+        display: grid;
+        gap: 0.75rem;
     }
+
     li {
-        padding: 0.2em 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 1.15rem;
+        border-radius: 1.1rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: background 0.2s ease, transform 0.15s ease;
     }
-    li:nth-child(odd) {
-        background: rgba(255, 255, 255, 0.5);
+
+    li:hover {
+        background: rgba(255, 255, 255, 0.06);
+        transform: translateY(-1px);
     }
-    .fullfilled {
-        background: darkgreen !important;
-        color: white;
+
+    li.fullfilled {
+        border-color: rgba(36, 196, 138, 0.35);
+        background: rgba(36, 196, 138, 0.12);
     }
-    .peak {
-        opacity: 0.35;
+
+    .hidden {
+        opacity: 0.34;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .score {
+        font-weight: 700;
+        color: #dff9ff;
+        background: rgba(35, 79, 136, 0.22);
+    }
+
+    .small-text {
+        color: var(--text-muted);
+        margin: 0;
+        line-height: 1.45;
     }
 </style>

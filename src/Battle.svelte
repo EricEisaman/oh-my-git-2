@@ -387,13 +387,14 @@
     #grid {
         flex: 1;
         display: grid;
-        grid-template-columns: 2fr 1fr 30em;
-        grid-template-rows: 2fr 1fr;
+        grid-template-columns: minmax(22rem, 1.7fr) minmax(18rem, 1fr) minmax(22rem, 1.4fr);
+        grid-template-rows: auto 1fr;
         grid-template-areas:
-            "repos repos log"
-            "repos repos screen";
-        background: lightgreen;
+            "repos log screen"
+            "repos log screen";
+        gap: 1.2rem;
         overflow: hidden;
+        align-items: stretch;
     }
 
     #state {
@@ -407,21 +408,32 @@
     #screen {
         grid-area: screen;
         font-family: Iosevka;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem;
     }
 
     #repos {
         grid-area: repos;
         display: flex;
-        gap: 2px;
+        gap: 1.2rem;
         flex-direction: column;
         overflow: hidden;
-        background: black;
+        padding: 0.2rem;
+        background: transparent;
+    }
+
+    #log {
+        grid-area: log;
+        min-height: 0;
+        padding: 0.2rem;
     }
 
     #log,
     #screen {
         flex: 1;
-        overflow: auto;
+        overflow: hidden;
     }
 
     #modal {
@@ -430,16 +442,18 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: blue;
+        background-color: rgba(0, 0, 0, 0.75);
         z-index: 10;
     }
     #refreshing {
         position: absolute;
-        left: 1em;
-        bottom: 1em;
-        padding: 1em;
-        border-radius: 1em;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
+        left: 1rem;
+        bottom: 1rem;
+        padding: 0.9rem 1.2rem;
+        border-radius: 1rem;
+        background-color: rgba(16, 30, 51, 0.92);
+        color: #d8e8ff;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.22);
     }
 </style>

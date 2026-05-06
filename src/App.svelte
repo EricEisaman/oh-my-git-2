@@ -136,22 +136,26 @@
 
 <style>
     :global(body) {
-        background: black;
+        background: transparent;
     }
+
     #container {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        padding: 1.2rem;
+        gap: 1.2rem;
     }
+
     #progress {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 500%;
-        color: white;
+        font-size: 4rem;
+        color: #d8e8ff;
     }
 </style>
