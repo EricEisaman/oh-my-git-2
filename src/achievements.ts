@@ -256,12 +256,12 @@ export function getAchievements() {
             [CardID.Commit, CardID.Merge],
         ),
         OCTOPUS_MERGE: new Achievement(
-            "Create a merge commit with three parents",
+            "Create an octopus merge commit with three or more parents",
             (b: Repository, a: Repository) => {
                 let tripleMergeBefore: ObjectID[] = []
                 for (let object of Object.values(b.objects)) {
                     if (object instanceof GitCommit) {
-                        if (object.parents.length == 3) {
+                        if (object.parents.length >= 3) {
                             tripleMergeBefore.push(object.oid)
                         }
                     }
@@ -270,7 +270,7 @@ export function getAchievements() {
                 let tripleMergeAfter: ObjectID[] = []
                 for (let object of Object.values(a.objects)) {
                     if (object instanceof GitCommit) {
-                        if (object.parents.length == 3) {
+                        if (object.parents.length >= 3) {
                             tripleMergeAfter.push(object.oid)
                         }
                     }
