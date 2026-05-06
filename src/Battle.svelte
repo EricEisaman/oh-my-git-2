@@ -359,7 +359,7 @@
         {/each}
         <RepoAdder on:addRepo={addRepoEvent} />
         {#if refreshing}
-            <div id="refreshing">Refreshing...</div>
+            <div id="refreshing">{$t`Refreshing...`}</div>
         {/if}
     </div>
     <div id="log">

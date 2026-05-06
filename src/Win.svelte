@@ -11,39 +11,38 @@
 </script>
 
 <div id="wrapper">
-    <div id="diploma">
+    <div id="diploma" class="panel panel-surface">
+        <div id="ribbon">
+            <span>{$t`Diploma awarded`}</span>
+        </div>
         <div id="header">
             <h1>{$t`Git Diploma`}</h1>
-            <h2>{$t`On completing OMG Sigma Pathway!`}</h2>
+            <h2>{$t`Awarded for completing OMG Sigma Pathway`}</h2>
         </div>
+
         <div id="body">
             <p>
-                {$t`Presented to:`}
+                <span class="label-pill">{$t`Presented to`}</span>
                 <input type="text" placeholder="Your name here" />
             </p>
-            <p>{$t`For mastering the following skills:`}</p>
+            <p class="subtitle">{$t`For demonstrating proficiency in these Git skills:`}</p>
             <ul>
-                <li>🪄 {$t`Creating and cloning repositories`}</li>
-                <li>🪓 {$t`Detaching HEADs`}</li>
-                <li>🍒 {$t`Rebasing and cherry-picking`}</li>
-                <li>🧹 {$t`Cleaning up after yourself`}</li>
-                <li>🎩 {$t`Advanced Git magic`}</li>
+                <li>🪄 {$t`Repository creation & branching`}</li>
+                <li>🪓 {$t`HEAD manipulation`}</li>
+                <li>🍒 {$t`Merging, rebasing, and cherry-picking`}</li>
+                <li>🧹 {$t`Index and workspace mastery`}</li>
+                <li>🎩 {$t`Advanced git workflow skills`}</li>
             </ul>
-            <br />
         </div>
+
         <div id="footer">
-            <p>
-                {@html $t`Signed: ${"<i>" + $t`Big Sig & Lil Siggy` + "</i>"}`} –
-                {$t`Date: ${date}`}
-            </p>
+            <p>{@html $t`Signed: ${"<strong>" + $t`Big Sig & Lil Siggy` + "</strong>"}`} • {$t`Date:`} {date}</p>
         </div>
-        <button id="print" on:click={print}>🖨️ {$t`Print`}</button>
-        <button
-            id="close"
-            on:click={() => {
-                dispatch("closeDiploma")
-            }}>X</button
-        >
+
+        <div id="actions">
+            <button class="secondary" on:click={print}>🖨️ {$t`Print`}</button>
+            <button on:click={() => dispatch("closeDiploma")}>✕ {$t`Close`}</button>
+        </div>
     </div>
 </div>
 
@@ -52,92 +51,131 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
         width: 100%;
-        background: #ddd;
-        position: relative;
+        min-height: 100%;
+        padding: 2rem;
+        background: radial-gradient(circle at top center, rgba(255, 255, 255, 0.07), transparent 26%),
+            linear-gradient(180deg, rgba(12, 18, 35, 0.95), rgba(8, 13, 22, 0.98));
     }
 
     #diploma {
-        font-size: 180%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 90%;
-        width: 50em;
-        border-radius: 5px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-        padding: 2em;
-        background: white;
+        width: min(100%, 52rem);
+        padding: 2rem;
+        display: grid;
+        gap: 1.4rem;
         position: relative;
+        color: #e8edf6;
+    }
+
+    #ribbon {
+        position: absolute;
+        top: 1.4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.55rem 1.1rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, rgba(82, 187, 255, 0.9), rgba(39, 154, 255, 0.95));
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        box-shadow: 0 12px 35px rgba(24, 138, 255, 0.25);
     }
 
     #header {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 100%;
+        gap: 0.55rem;
+        padding-top: 3rem;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 3rem;
+        letter-spacing: -0.03em;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: var(--text-muted);
     }
 
     #body {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        gap: 1rem;
     }
 
     #body p {
-        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 0;
+        font-size: 1rem;
     }
 
-    #cards {
+    input {
+        flex: 1;
+        min-width: 12rem;
+        padding: 0.9rem 1rem;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        color: white;
+        font: inherit;
+    }
+
+    .subtitle {
+        color: var(--text-muted);
+        margin: 0;
+        font-size: 0.98rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.85rem;
+    }
+
+    li {
         display: flex;
-        gap: 1em;
-        flex-wrap: wrap;
-        font-size: 30%;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 0.9rem 1rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1rem;
     }
 
     #footer {
+        color: var(--text-muted);
+        text-align: center;
+    }
+
+    #actions {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        gap: 0.85rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
     }
-    #print {
-        font-size: 140%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background-color: #900c3f;
-        margin-bottom: 0.5em;
-        color: white;
-    }
-    #close {
-        font-size: 140%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        background-color: #900c3f;
-        margin-top: 0.5em;
-        color: white;
-    }
+
     @media print {
         @page {
             size: landscape;
         }
-        #print,
+        #actions,
         :global(#lang-switch) {
             display: none;
         }
         #diploma {
             box-shadow: none;
-        }
-        #close {
-            display: none;
+            background: white;
+            color: black;
         }
     }
 </style>

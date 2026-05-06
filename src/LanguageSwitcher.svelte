@@ -2,7 +2,7 @@
     import {locale} from "svelte-i18n-lingui"
     import languages from "../languages.ts"
 
-    let selected = "de"
+    let selected = "en"
     $: setLocale(selected)
 
     async function setLocale(lang: string) {

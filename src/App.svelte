@@ -1,5 +1,6 @@
 <script lang="ts">
     import {onMount} from "svelte"
+    import {t, locale} from "svelte-i18n-lingui"
     import Menu from "./Menu.svelte"
     import DecisionSvelte from "./Decision.svelte"
     import BattleSvelte from "./Battle.svelte"
@@ -19,7 +20,11 @@
         loadingProgress = (e.loaded / e.total) * 95
     }
 
-    onMount(() => {
+    onMount(async () => {
+        // Initialize English locale
+        const {messages: enMessages} = await import("./locales/en.ts")
+        locale.set("en", enMessages)
+        
         transformToFitScreen()
 
         shell = new LinuxBrowserShell({
@@ -127,7 +132,7 @@
                 <WinSvelte {adventure} />
             {/if}
         {:else}
-            Starting game...
+            <div id="starting">{$t`Starting game...`}</div>
         {/if}
     {/if}
 </div>
@@ -155,7 +160,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 4rem;
-        color: #d8e8ff;
+        font-size: 1rem;
+        color: var(--text-muted);
+        opacity: 0.7;
+    }
+
+    #starting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-muted);
+        min-height: 8rem;
     }
 </style>

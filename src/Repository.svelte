@@ -65,14 +65,19 @@
 </script>
 
 <div id="wrapper">
-    <div
-        id="name"
-        on:click={() => {
-            dispatch("swapDir", repo.path)
-        }}
-    >
-        {repo.path}
-        {#if repo.bare}(bare){/if}
+    <div id="header">
+        <div
+            id="name"
+            on:click={() => {
+                dispatch("swapDir", repo.path)
+            }}
+        >
+            {repo.path}
+            {#if repo.bare}(bare){/if}
+        </div>
+        <div id="delete">
+            <button on:click={() => dispatch("deleteRepo", repo)}>❌</button>
+        </div>
     </div>
     {#if repo.empty}
         <div id="message">(not initialized)</div>
@@ -84,15 +89,17 @@
     <div id="cards">
         <Cards {index} {workingDirectory} on:edited />
     </div>
-    <div id="delete">
-        <button on:click={() => dispatch("deleteRepo", repo)}>❌</button>
-    </div>
 </div>
 
 <style>
     #wrapper {
         flex: 1;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "header header"
+            "graph cards";
         position: relative;
         min-width: 0;
         overflow: hidden;
@@ -101,10 +108,22 @@
         border-radius: 1.5rem;
         box-shadow: 0 24px 55px rgba(0, 0, 0, 0.24);
     }
+
+    #header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        background: rgba(255, 255, 255, 0.04);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
     #graph {
         flex: 1;
         overflow: hidden;
         display: flex;
+        grid-area: graph;
     }
     :global(#graph svg) {
         height: 100%;
@@ -122,20 +141,17 @@
     #cards {
         display: flex;
         width: 100%;
+        grid-area: cards;
     }
     #name {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        z-index: 10;
+        grid-area: name;
+        padding: 1rem;
         cursor: pointer;
         font-weight: 700;
         color: #e7f1ff;
-        background: rgba(255, 255, 255, 0.06);
-        padding: 0.65rem 0.95rem;
-        border-radius: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.04);
         transition: transform 0.15s ease;
+        z-index: 10;
     }
     #name:hover {
         transform: translateY(-1px);
