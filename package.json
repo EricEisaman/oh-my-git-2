@@ -32,6 +32,7 @@
         "@types/lodash": "^4.17.24",
         "@vitest/browser": "^3.2.4",
         "prettier": "^3.8.3",
+        "svelte": "^4.2.20",
         "svelte-check": "^4.4.8",
         "typescript": "^5.9.3",
         "vite": "^5.4.21",
