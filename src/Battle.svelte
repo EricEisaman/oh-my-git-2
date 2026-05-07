@@ -44,7 +44,9 @@
         achievementTracker.add(achievement, 1)
     }
 
-    let refreshing = false
+    type RefreshState = "idle" | "refreshing" | "refreshingDirty"
+    let refreshState: RefreshState = "idle"
+    $: refreshing = refreshState !== "idle"
 
     let points = 0
 
@@ -116,11 +118,13 @@
         repos = repos
 
         foregroundTerminal.send(`cd ${repoPath}\n`)
-        foregroundTerminal.onUserCommand(() => {
-            updateACoupleOfTimes()
+        await foregroundTerminal.waitFor("# ")
+        foregroundTerminal.onUserCommand(async () => {
+            await foregroundTerminal.waitFor("# ")
+            await requestRefresh()
         })
 
-        await update()
+        await requestRefresh()
         battle.onSideEffect(realizeEffect)
 
         // TODO: Not actually hidden anymore.
@@ -129,16 +133,31 @@
         //await battle.devSetup()
     })
 
-    async function update() {
-        let beforeRepo = repos[0].clone()
+    async function requestRefresh(): Promise<void> {
+        if (refreshState === "refreshing") {
+            refreshState = "refreshingDirty"
+            return
+        }
+        if (refreshState === "refreshingDirty") return
 
-        for (let repo of repos) {
+        refreshState = "refreshing"
+        try {
+            await runRefresh()
+        } finally {
+            const wasDirty = refreshState === "refreshingDirty"
+            refreshState = "idle"
+            if (wasDirty) await requestRefresh()
+        }
+    }
+
+    async function runRefresh(): Promise<void> {
+        if (repos.length === 0) return
+        const beforeRepo = repos[0].clone()
+        for (const repo of repos) {
             await repo.update()
         }
-
         repos = repos
         updateAchievements(beforeRepo)
-        refreshing = false
     }
 
     function updateAchievements(beforeRepo: Repository) {
@@ -182,13 +201,6 @@
         }
     }
 
-    function updateACoupleOfTimes() {
-        refreshing = true
-        setTimeout(async () => {
-            await update()
-        }, 500)
-    }
-
     async function cardDrag(e: CustomEvent) {
         console.log("drag", e.detail)
         const slot = e.detail.slotIndex + 1
@@ -209,8 +221,8 @@
 
     async function realizeEffect(effect: SideEffect) {
         if (effect instanceof CommandSideEffect) {
-            backgroundTerminal.send(effect.command + "\n")
-            updateACoupleOfTimes()
+            await backgroundTerminal.run(effect.command)
+            await requestRefresh()
         } else if (effect instanceof SyncGameToDiskSideEffect) {
             await syncGameToDisk()
         } else if (effect instanceof BattleUpdatedSideEffect) {
@@ -228,7 +240,8 @@
         foregroundTerminal.send(command + "\n")
         //let result = await shell.run_with_exit_code(command)
         //console.log(`Command output: ${result.output}`)
-        updateACoupleOfTimes()
+        await foregroundTerminal.waitFor("# ")
+        await requestRefresh()
         //return result
     }
 
@@ -242,7 +255,7 @@
                 await backgroundTerminal.run(`rm -f ${index + 1}`)
             }
         }
-        updateACoupleOfTimes()
+        await requestRefresh()
     }
 
     async function playCard(e: CustomEvent) {
@@ -306,7 +319,7 @@
 
         repos.push(new Repository(path, backgroundTerminal, bare))
         repos = repos
-        updateACoupleOfTimes()
+        await requestRefresh()
     }
 
     function addRepoEvent(e: CustomEvent) {
@@ -326,7 +339,7 @@
         let fileName = repo.path + "/" + e.detail.name
         let content = e.detail.content
         await backgroundTerminal.putFile(fileName, content.split("\n"))
-        updateACoupleOfTimes()
+        await requestRefresh()
     }
 </script>
 
@@ -436,15 +449,6 @@
         overflow: hidden;
     }
 
-    #modal {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.75);
-        z-index: 10;
-    }
     #refreshing {
         position: absolute;
         left: 1rem;
