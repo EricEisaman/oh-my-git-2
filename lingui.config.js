@@ -1,5 +1,3 @@
-import {jstsExtractor, svelteExtractor} from "svelte-i18n-lingui/extractor"
-
 export default {
     locales: ["en", "de", "pt", "fr"],
     sourceLocale: "en",
@@ -9,5 +7,4 @@ export default {
             include: ["src"],
         },
     ],
-    extractors: [jstsExtractor, svelteExtractor],
 }
