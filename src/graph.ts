@@ -290,7 +290,7 @@ export class Graph {
             .attr("orient", "auto-start-reverse")
             .append("path")
             .attr("d", d3.line()(arrowPoints))
-            .attr("fill", "#111")
+            .attr("fill", "#aaa")
 
         this.linkGroup = g.append("g").selectAll()
 
@@ -451,6 +451,7 @@ export class Graph {
 
                     g.append("text")
                         .attr("transform", "translate(-16, 5)")
+                        .attr("fill", "#fff")
                         .text((d) => d.label)
 
                     let tooltip = g
@@ -492,7 +493,7 @@ export class Graph {
                 let g = enter.append("g")
 
                 g.append("line")
-                    .attr("stroke", "#111")
+                    .attr("stroke", "#aaa")
                     .attr("stroke-width", 2)
                     .attr("marker-end", "url(#arrowhead)")
 
@@ -501,7 +502,7 @@ export class Graph {
                     .attr("text-anchor", "middle")
                     .attr("dominant-baseline", "middle")
                     .attr("font-style", "italic")
-                    .attr("fill", "#444")
+                    .attr("fill", "#ccc")
                     .text((d: any) => d.label)
 
                 return g
